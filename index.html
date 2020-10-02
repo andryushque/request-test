@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Столовая.РУ | Главная</title>
 
-    <!-- Fontawesome icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-      crossorigin="anonymous"
-    />
-
     <!-- Favicon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -23,7 +15,185 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="nav-wrapper">
+        <div class="container">
+          <nav class="nav header__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Компания</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Проектирование</a>
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Ресторанам</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Застройщикам</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Гос.заказщикам</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Таблет-питание</a>
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Сервис</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="nav__list">
+              <li class="nav__item nav__item--email">
+                <a href="#" class="nav__link nav__link--email link"
+                  ><img
+                    src="img/icons/email.png"
+                    alt="Иконка: email"
+                    class="nav__link-icon"
+                  />info@stolovay.ru</a
+                >
+                <a href="#" class="button nav__link-button">Скопировать</a>
+              </li>
+              <li class="nav__item">
+                <a
+                  href="tel:8-495-790-72-05"
+                  class="nav__link nav__link--phone link"
+                  ><img
+                    src="img/icons/phone.png"
+                    alt="Иконка: телефон"
+                    class="nav__link-icon"
+                  />8 495 790-72-05</a
+                >
+              </li>
+            </ul>
+
+            <div class="nav__submenu submenu">
+              <div class="submenu__links">
+                <a href="tel:8-495-790-72-05" class="submenu__link link"
+                  >8 495 790-72-05</a
+                >
+                <span class="submenu__text"
+                  >Мы принимаем звонки без выходных.</span
+                >
+                <span class="submenu__title">Выберите способ связи:</span>
+                <ul class="submenu__list">
+                  <li class="submenu__item">
+                    <div class="submenu__image-wrapper">
+                      <img
+                        src="img/icons/phone--black.png"
+                        alt="Иконка: телефон"
+                        class="submenu__icon"
+                      />
+                    </div>
+                    <a href="#" class="submenu__item-link link">Мобильный</a>
+                  </li>
+                  <li class="submenu__item">
+                    <div class="submenu__image-wrapper">
+                      <img
+                        src="img/icons/viber.png"
+                        alt="Иконка: viber"
+                        class="submenu__icon"
+                      />
+                    </div>
+                    <a href="#" class="submenu__item-link link">Viber</a>
+                  </li>
+                  <li class="submenu__item">
+                    <div class="submenu__image-wrapper">
+                      <img
+                        src="img/icons/telegram.png"
+                        alt="Иконка: telegram"
+                        class="submenu__icon"
+                      />
+                    </div>
+                    <a href="#" class="submenu__item-link link">Telegram</a>
+                  </li>
+                  <li class="submenu__item">
+                    <div class="submenu__image-wrapper">
+                      <img
+                        src="img/icons/whatsapp.png"
+                        alt="Иконка: whatsapp"
+                        class="submenu__icon"
+                      />
+                    </div>
+                    <a href="#" class="submenu__item-link link">Whatsapp</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="submenu__contact">
+                <span class="submenu__title">Обратный звонок:</span>
+                <span class="submenu__text"
+                  >Мы перезвоним вам в течении часа</span
+                >
+                <form action="/" method="POST" class="submenu__form form">
+                  <label class="form__label" for="contact-name">Имя:</label>
+                  <input
+                    id="contact-name"
+                    type="text"
+                    class="input form__input"
+                    name="contact-name"
+                    minlength="2"
+                    required
+                  />
+                  <label class="form__label" for="contact-phone"
+                    >Телефон:</label
+                  >
+                  <input
+                    id="contact-phone"
+                    type="text"
+                    class="input form__input"
+                    name="contact-phone"
+                    minlength="2"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    name="form"
+                    value="contact-form"
+                    class="button form__button"
+                  >
+                    Отправить
+                  </button>
+                </form>
+
+                <button class="button submenu__close">
+                  <img src="img/icons/close.png" alt="Иконка: закрыть" />
+                </button>
+              </div>
+              <!-- /.submenu__contact -->
+            </div>
+            <!-- /.nav__submenu -->
+          </nav>
+        </div>
+        <!-- /.container -->
+
+        <div class="nav-wrapper__overlay"></div>
+      </div>
+      <!-- /.header-nav -->
+
+      <div class="subnav-wrapper">
+        <div class="container">
+          <a href="#" class="logo link">
+            <img
+              src="img/logo.png"
+              alt="Логотип: Столовая.ру"
+              class="logo__image"
+            />
+            <span class="logo__text">Столовая.РУ</span>
+          </a>
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.subnav-wrapper -->
+    </header>
     <!-- /.header -->
 
     <main class="main"></main>
