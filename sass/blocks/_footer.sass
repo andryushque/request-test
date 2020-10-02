@@ -1,0 +1,62 @@
+.footer
+  &-wrapper
+    padding: 9.3rem 0 7.4rem
+    background-color: #232323
+    & > .container
+      display: flex
+      justify-content: space-between
+      padding: 0 7.3rem
+    .footer
+      &__item:last-child
+        .footer
+          &__title
+            margin-bottom: 1.8rem
+          &__list
+            margin-bottom: 2rem
+          &__text
+            display: inline-block
+            margin-top: -1.5rem
+      &__title
+        margin-bottom: 2.5rem
+        font: normal 400 2.4rem/2.4rem "MyriadPro"
+        letter-spacing: 0.5px
+        color: #777777
+      &__link
+        font: normal 400 1.6rem/2.4rem "MyriadPro"
+        color: $color-light
+        &:hover
+          text-decoration: underline
+      &__text
+        font: normal 400 1.6rem/2.4rem "MyriadPro"
+        color: $color-light
+
+  &-copyright 
+    padding: 4.2rem 0 3rem
+    background-color: #191919
+    & > .container
+      display: flex
+      justify-content: space-between
+      padding: 0 7.3rem
+  &__logo
+    display: flex
+    align-items: center
+    &-link
+      display: inline-block
+      margin-right: 1.6rem
+    img
+      width: 4rem
+      height: 4rem
+  &__logo-title
+    display: block
+    font: normal 400 2.4rem "MyriadPro"
+    color: $color-light
+  &__logo-subtitle
+    display: block
+    font: normal 300 1.6rem"MyriadPro"
+    letter-spacing: 0.25px
+    color: #787878
+  &__copyright
+    font: normal 400 1.8rem "MyriadPro"
+    line-height: 28.63px
+    letter-spacing: 0.5px
+    color: $color-light
