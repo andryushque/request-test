@@ -7,15 +7,15 @@
       left: 0
       right: 0
       bottom: 0
-      z-index: -1
-      width: 100%
+      z-index: 9
+      width: 0
       height: calc(100vh - 4.8rem)
       background-color: #000000
       opacity: 0
       transition: opacity 0.3s ease
       &.active
         opacity: 0.5
-        z-index: 9
+        width: 100%
 
   &__nav
     margin: 0 -2.5rem
@@ -202,7 +202,6 @@
         font: normal 400 3.3rem "MyriadPro"
         color: #171717
 
-
   .catalog
     box-shadow: 4px 6px 18px rgba(0, 0, 0, 0.11)
     background-color: $color-light
@@ -230,3 +229,4 @@
       display: block
       font: normal 400 1.6rem "MyriadPro"
       color: #343434
+
