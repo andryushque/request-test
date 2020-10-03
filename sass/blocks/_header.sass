@@ -184,13 +184,13 @@
         height: 2.1rem
         background-color: transparent
 
-  .subnav-wrapper
-    padding: 1.1rem 0
+  .subnav
     background-color: #e8e7e7
     & > .container
       display: flex
       align-items: center
-      //justify-content: space-between
+      justify-content: space-between
+      height: 6.2rem
     .logo
       display: flex
       align-items: center
@@ -199,71 +199,123 @@
         height: 4rem
       &__text
         margin-left: 0.8rem
-        margin-right: 9rem
         font: normal 400 3.3rem "MyriadPro"
         color: #171717
 
-
-    .subnav
-      &__search-wrapper
-        display: flex
-        border: none
-        outline: none
-        width: 88.5rem
+    &__search-wrapper
+      display: flex
+      margin-left: 9rem
+      margin-right: auto
+      border: none
+      outline: none
+      width: 88.5rem
+      height: 3.5rem
+      border-radius: 0.5rem
+      background-color: $color-light
+      .nice-select
+        border: 1px solid #e8e7e7
+        background-color: #f1f1f1
         height: 3.5rem
-        border-radius: 0.5rem
-        background-color: $color-light
-        .nice-select
-          border: 1px solid #e8e7e7
-          background-color: #f1f1f1
-          height: 3.5rem
-          font: normal 400 1.6rem/3.5rem "MyriadPro"
-          color: #777777
-          padding-left: 1.7rem
-          .list
-            position: relative
-            top: 0
-            left: -1.7rem
-            background-color: #f1f1f1
-            padding: 6rem 3.6rem 4.1rem 1.4rem
-            margin-top: 0
-            border-radius: 0
-            transform-origin: 0 0
-            &::after
-              content: "Выбирете категорию:"
-              position: absolute
-              top: 1.7rem
-              z-index: 100
-              font: normal 400 1.6rem/2.4rem "MyriadPro"
-              color: #777777
-          .option
-            font: normal 400 1.6rem/2.4rem "MyriadPro"
-            padding: 0
-            min-height: 0
-            color: #343434
-            &:hover, &.focus, &.selected.focus
-              color: $color-accent-1
-              background-color: #f1f1f1
-      &__search-input
-        flex-grow: 1
-        height: 3.5rem
-        border: none
-        outline: none
-        padding: 1rem
         font: normal 400 1.6rem/3.5rem "MyriadPro"
-        color: #343434
-      &__search-button
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 5rem
-        height: 3.5rem
-        border-top-right-radius: 0.5rem
-        border-bottom-right-radius: 0.5rem
-        border: none
-        outline: none
-        cursor: pointer
+        color: #777777
+        padding-left: 1.7rem
+        .list
+          position: relative
+          top: 0
+          left: -1.7rem
+          background-color: #f1f1f1
+          padding: 6rem 3.6rem 4.1rem 1.4rem
+          margin-top: 0
+          border-radius: 0
+          transform-origin: 0 0
+          &::after
+            content: "Выбирете категорию:"
+            position: absolute
+            top: 1.7rem
+            z-index: 100
+            font: normal 400 1.6rem/2.4rem "MyriadPro"
+            color: #777777
+        .option
+          font: normal 400 1.6rem/2.4rem "MyriadPro"
+          padding: 0
+          min-height: 0
+          color: #343434
+          &:hover, &.focus, &.selected.focus
+            color: $color-accent-1
+            background-color: #f1f1f1
+    &__search-input
+      flex-grow: 1
+      height: 3.5rem
+      border: none
+      outline: none
+      padding: 1rem
+      font: normal 400 1.6rem/3.5rem "MyriadPro"
+      color: #343434
+    &__search-button
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 5rem
+      height: 3.5rem
+      border-top-right-radius: 0.5rem
+      border-bottom-right-radius: 0.5rem
+      border: none
+      outline: none
+      cursor: pointer
+      background-color: $color-accent-2
+
+    &__provide-link
+      display: inline-flex
+      align-items: center
+      margin-right: 2rem
+      &:hover
+        .subnav
+          &__provide-text
+            color: $color-accent-1
+    &__provide-text
+      width: 10rem
+      padding-left: 0.5rem
+      font: normal 400 1.4rem/1.6rem "MyriadPro"
+      color: #777777
+      transition: color 0.3s ease
+
+    .cart
+      display: flex
+      align-items: center
+      height: 100%
+      padding: 0 1.6rem
+      cursor: pointer
+      transition: background-color 0.3s ease
+      &:hover
         background-color: $color-accent-2
+        .cart
+          &__number, &__text-title, &__text-number
+            color: $color-light
+          &__image
+            img
+              filter: invert(1)
+      &__image
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-right: 1.2rem
+        img
+          transition: filter 0.3s ease
+      &__number
+        margin-bottom: -0.5rem
+        font: normal 400 1.4rem/1.6rem "MyriadPro"
+        color: $color-accent-2
+        transition: color 0.3s ease
+      &__text-title
+        font: normal 300 1.4rem/1.6rem "MyriadPro"
+        color: #777777
+        transition: color 0.3s ease
+      &__text-number
+        font: normal 400 1.6rem/1.8rem "MyriadPro"
+        color: #171717
+        transition: color 0.3s ease
+
+
 
   .catalog
     box-shadow: 4px 6px 18px rgba(0, 0, 0, 0.11)
