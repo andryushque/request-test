@@ -1,0 +1,103 @@
+.recommend
+  padding-bottom: 17rem
+  &-wrapper
+    padding: 0 7.8rem
+  &__section-title
+    margin-bottom: 1.5rem
+    font: normal 400 4rem "MyriadPro"
+    color: #232323
+    text-align: center
+  &__subtitle
+    max-width: 65.8rem
+    margin: 0 auto 6.5rem
+    font: normal 300 1.6rem "MyriadPro"
+    color: #787878
+    text-align: center
+  &__cards
+    display: grid
+    grid-template-columns: 59.4rem 1fr
+    grid-template-rows: 42rem 32rem
+    grid-gap: 1.5rem
+  &__card
+    &:nth-child(1)
+      grid-row: span 2
+      background-color: $color-light
+    &:nth-child(2)
+      background-color: #232323
+    &:nth-child(3)
+      background-color: #232323
+      background-color: $color-light
+
+  .recommend-card
+    display: flex
+    align-items: center
+    &__suptitle
+      font: normal 400 2rem "MyriadPro"
+      text-transform: uppercase
+      letter-spacing: 0.75px
+    &__title
+      font: normal 400 3rem "MyriadPro"
+      letter-spacing: 0.4px
+    &__text
+      font: normal 300 1.6rem "MyriadPro"
+      color: #777777
+    &__image
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    &:nth-child(1)
+      flex-direction: column
+      padding: 6.5rem 8rem 0
+      .recommend-card
+        &__suptitle
+          color: #121212
+          text-align: center
+        &__title
+          margin-bottom: 2rem
+          color: #121212
+          text-align: center
+        &__text
+          max-width: 28.4rem  
+          text-align: center
+        &__image
+          width: 100%
+          max-width: 43rem
+          height: 48rem
+          margin-top: auto
+
+    &:nth-child(2)
+      .recommend-card
+        &__suptitle
+          color: #ffffff
+        &__title
+          max-width: 20rem  
+          margin-bottom: 2rem
+          color: #ffffff
+        &__text
+          max-width: 40rem  
+        &__image
+          width: 100%
+          max-width: 19rem
+          height: 100%
+          padding-top: 1rem
+          margin-right: 6rem
+          margin-top: auto
+
+    &:nth-child(3)
+      justify-content: space-between
+      padding-left: 6rem
+      .recommend-card
+        &__suptitle
+          color: #121212
+        &__title
+          margin-bottom: 2rem
+          color: #121212
+        &__text
+        &__image
+          width: 100%
+          max-width: 30rem
+          height: 100%
+          padding-top: 1rem
+          margin-top: auto
