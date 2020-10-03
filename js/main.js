@@ -25,6 +25,10 @@ $(document).ready(function () {
     overlay.removeClass("active");
   });
 
+  /*=== Select styles ===*/
+  const subnavSelect = $("#subnav-select");
+  subnavSelect.niceSelect();
+
   /*=== Intro slider ===*/
   var introSlider = new Swiper(".swiper-container", {
     speed: 400,

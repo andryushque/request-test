@@ -12,6 +12,7 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -189,6 +190,27 @@
             />
             <span class="logo__text">Столовая.РУ</span>
           </a>
+
+          <form type="submit" class="subnav__search-wrapper">
+            <select id="subnav-select">
+              <option value="" selected>Все</option>
+              <option value="">Тепловое</option>
+              <option value="">Холодильное</option>
+              <option value="">Электромеханическое</option>
+              <option value="">Посудомоечное</option>
+              <option value="">Барное</option>
+              <option value="">Хлебопекарное</option>
+              <option value="">Линии раздачи</option>
+              <option value="">Нейтральное</option>
+              <option value="">Для фаст фуда</option>
+              <option value="">Для залов</option>
+              <option value="">Весовое</option>
+            </select>
+            <input type="text" class="subnav__search-input">
+            <button type="submit" class="subnav__search-button">
+              <img src="img/icons/search.png" alt="Иконка: поиск">
+            </button>
+          </form>
         </div>
         <!-- /.container -->
       </div>
@@ -829,6 +851,7 @@
     <!-- JavaScript Files -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
