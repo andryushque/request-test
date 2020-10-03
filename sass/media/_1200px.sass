@@ -1,3 +1,104 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+
+  .header
+    &__nav
+      margin: 0 -0.3rem
+    .nav
+      &__link
+        padding: 1.4rem 0.3rem
+        font-size: 1.3rem
+
+    .subnav
+      .logo__text 
+        margin-left: 0.5rem
+        font-size: 2.6rem
+      &__search-wrapper
+        margin-left: 1rem
+        width: 40rem
+        .nice-select
+          width: 20rem
+          .list
+            width: 20rem
+            padding: 6rem 1.5rem 1.5rem
+
+    .catalog
+      &__name
+        font-size: 1.2rem
+      &__link
+        width: 4rem
+        height: 4rem
+
+  .intro
+    .categories
+      width: 27rem
+      &__title
+        padding-left: 2rem
+        font-size: 2rem
+      &__item
+        padding-left: 2rem
+        padding-right: 2rem
+        height: 4rem
+      &__link
+        font: normal 300 1.5rem/4rem "MyriadPro"
+    &-slider
+      width: 42rem
+    &-slide
+      padding: 3rem
+      &__text
+        margin-bottom: 4rem
+        font-size: 1.4rem
+      &__title
+        font: normal 400 3rem/3.2rem "MyriadPro"
+    .discount
+      width: 27rem
+      padding-bottom: 2rem
+      padding-left: 2rem
+
+  .news
+    padding: 10rem 0
+    &__section-title
+      margin-bottom: 3rem
+      font-size: 3.6rem
+    &__content
+      padding-right: 2rem
+    &__items
+      padding-left: 0
+      .news
+        &__image
+          width: 15rem
+          min-width: 15rem
+          height: 15rem
+        &__title
+          margin-bottom: 1.5rem
+          font-size: 2rem
+          line-height: 2.4rem
+
+  .recommend
+    padding-bottom: 10rem
+    &__section-title
+      font-size: 3.6rem
+    &__cards
+      grid-template-columns: 36rem 1fr
+      .recommend-card
+        &:nth-child(1)
+          padding: 3rem 4rem 0
+
+  .ceo
+    padding-bottom: 10rem
+    &__info
+      padding-top: 4rem
+      margin-right: 2rem
+    &__section-title
+      font-size: 3.6rem
+    &__text
+      font-size: 1.6rem
+      line-height: 2rem
+    &__subtitle
+      font-size: 3.4rem
+    &__list
+      margin-bottom: 3rem
+    &__item
+      font-size: 1.6rem
+      line-height: 2rem
