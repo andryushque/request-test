@@ -1,3 +1,290 @@
 @media (max-width: 991px)
   .container
-    max-width: 700px
+    width: 690px
+
+  .header
+    .nav-wrapper
+      display: none
+    .subnav
+      display: none
+    .catalog
+      display: none
+    &-mmenu
+      display: flex
+      .container
+        width: 750px
+
+  .intro
+    .container
+      width: 750px
+    &-wrapper
+      flex-direction: column
+      padding-top: 0
+      padding-bottom: 3rem
+    &__categories
+      display: none
+    &-slider
+      width: 100%
+      margin-bottom: 3rem
+    &-slide
+      width: 100%
+      padding: 8rem 3.5rem 12rem 3rem 
+      &__text
+        margin-bottom: 4rem
+        font-size: 2.5rem
+        line-height: 3.3rem
+      &__title
+        max-width: 40rem
+        margin-bottom: 2.2rem
+        font-size: 4rem
+        line-height: 4.2rem
+      &__subtitle
+        margin-bottom: 3.5rem
+        font: normal 300 2.5rem/3.3rem "MyriadPro"
+      &__button
+        width: 21.3rem
+        border-radius: 2.7rem
+        font: normal 400 3rem/5.3rem "MyriadPro"
+    .swiper
+      &-pagination
+        margin-bottom: 3.2rem
+        &-bullet
+          width: 1.6rem
+          height: 1.6rem
+      &-container-horizontal 
+        & > .swiper-pagination-bullets 
+          .swiper-pagination-bullet
+            margin: 0 1rem
+      &-button
+        &-prev, &-next
+          display: flex
+
+    .discount
+      width: auto
+      height: 47.6rem
+      margin: 0 3rem
+      padding: 5.5rem 6rem
+      &__image
+        max-height: 14.6rem
+        margin-bottom: 2rem
+      &__suptitle
+        font-size: 2.5rem
+        line-height: 3rem
+      &__title
+        margin-bottom: 3rem
+        font-size: 5rem
+        line-height: 5.5rem
+      &__link
+        font-size: 3rem
+        line-height: 5.5rem
+
+    .brands
+      width: auto
+      margin: 0 3rem
+      padding: 0
+      &__items
+        flex-wrap: wrap
+        height: auto
+      &__item
+        flex: 50%
+        padding: 2.5rem 0
+        border-right: none
+        &:nth-child(-n+4)
+          border-bottom: 1px solid #e8e7e7
+      &__link
+        width: 100%
+        height: 12rem
+        line-height: 12rem
+        font-size: 3rem
+        &:nth-last-child(odd)
+          border-right: 1px solid #e8e7e7
+
+  .news
+    display: none
+
+  .recommend
+    padding-top: 14rem
+    padding-bottom: 16rem
+    &__section-title
+      font-size: 5rem
+    &__subtitle
+      max-width: 100%
+      margin-bottom: 7rem
+      font-size: 3rem
+    &__cards
+      display: grid
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(3, 48.3rem)
+      grid-gap: 1rem
+    &__card
+      &:nth-child(1)
+        grid-row: span 1
+
+    .recommend-card
+      &__suptitle
+        font-size: 3rem
+      &__title
+        font-size: 4rem
+      &__text
+        font-size: 2.5rem
+      &:nth-child(1)
+        flex-direction: row
+        padding: 0 0 0 6.8rem 
+        .recommend-card
+          &__suptitle
+            text-align: left
+            margin-bottom: 1.5rem
+          &__title
+            margin-bottom: 4.5rem
+            text-align: left
+          &__text
+            max-width: 100%
+            text-align: left
+          &__image
+            width: 23.5rem
+            min-width: 23.5rem
+            max-width: 100%
+            height: 100%
+            padding-top: 2.5rem
+            margin-left: 2rem
+      &:nth-child(2)
+        padding: 0 2rem 0 0 
+        .recommend-card
+          &__suptitle
+            text-align: left
+            margin-bottom: 1.5rem
+          &__title
+            max-width: 100%
+            margin-bottom: 4.5rem
+            text-align: left
+          &__text
+            max-width: 100%
+            text-align: left
+          &__image
+            width: 23.5rem
+            min-width: 23.5rem
+            max-width: 100%
+            height: 100%
+            padding-top: 2.5rem
+            margin-right: 4.3rem
+      &:nth-child(3)
+        padding: 0 0 0 6.8rem 
+        .recommend-card
+          &__suptitle
+            text-align: left
+            margin-bottom: 1.5rem
+          &__title
+            margin-bottom: 4.5rem
+            text-align: left
+          &__text
+            max-width: 100%
+            text-align: left
+          &__image
+            width: 23.5rem
+            min-width: 23.5rem
+            max-width: 100%
+            height: 100%
+            padding-top: 2.5rem
+            margin-left: 2rem
+
+  .ceo
+    padding-bottom: 15rem
+    &-wrapper
+      flex-wrap: wrap
+    &__content
+      width: 100%
+      order: 2
+    &__info
+      width: 100%
+      margin-right: 0
+      margin-bottom: 13rem
+      padding-top: 0
+      padding-left: 5.5rem
+
+    &__logo
+      margin-bottom: 5rem
+      &-link
+        margin-bottom: 5rem
+        img
+          width: 25rem
+          height: 25rem
+    &__logo-title
+      font-size: 5rem
+    &__logo-subtitle
+      margin-top: -1rem
+      font-size: 2.5rem
+    &__info-title
+      font-size: 4rem
+    &__info-subtitle
+      margin-bottom: 3.5rem
+      font-size: 3rem
+    &__info-item
+      font-size: 3rem
+
+    &__section-title
+      margin-bottom: 5rem
+      font-size: 5rem
+    &__text
+      font-size: 3rem
+      line-height: 3.6rem
+      margin-bottom: 6rem
+    &__subtitle
+      display: none
+    &__list
+      display: none
+    &__button
+      width: 10rem
+      height: 10rem
+      font-size: 5rem
+
+  .footer
+    &-wrapper
+      padding: 4.5rem 0
+      & > .container
+        flex-direction: column
+        padding: 0 4rem 0 0
+      .footer
+        &__item:last-child
+          display: block
+        &__item:nth-child(4)
+          .footer
+            &__title
+              margin-bottom: 0
+        &__title
+          position: relative
+          margin-bottom: 0
+          font-size: 3rem
+          line-height: 9.5rem
+          color: $color-light
+          &::after
+            content: "+"
+            position: absolute
+            right: 0
+            top: 0
+            cursor: pointer
+        &__item
+          border-bottom: 1px solid rgba(#f3f2f2, 0.16)
+          &:last-child
+            border-bottom: 0
+        &__list
+          display: none
+    
+    &-copyright 
+      padding: 4.2rem 0 4rem
+      & > .container
+        flex-direction: column
+        padding: 0
+    &__logo
+      margin-bottom: 3rem
+      &-link
+        margin-right: 2rem
+      img
+        width: 8.8rem
+        height: 8.8rem
+    &__logo-title
+      font-size: 5rem
+    &__logo-subtitle
+      font-size: 3rem
+    &__copyright
+      font-size: 4rem
+      line-height: 4rem

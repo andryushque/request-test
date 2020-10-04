@@ -348,3 +348,86 @@
       color: #343434
       transition: color 0.3s ease
 
+  &-mmenu
+    display: none
+  .mmenu
+    &-wrapper
+      width: 100%
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 1.2rem 3rem 
+      border-bottom: 1px solid #e2e2e2
+    &__button-nav
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      width: 7.3rem
+      height: 7.3rem
+      margin-right: 3rem
+      border-radius: 50%
+      background-color: $color-accent-2
+      transition: box-shadow 0.3s ease
+      &:hover
+        box-shadow: 4px 6px 24px rgba($color-accent-2, 0.5)
+    &__button-line
+      width: 3rem
+      height: 2px
+      margin: 0.35rem 0
+      background-color: $color-light
+
+    &__logo
+      display: flex
+      align-items: center
+      margin-right: auto
+      &-link
+        display: inline-block
+        margin-right: 1.2rem
+      img
+        width: 5.5rem
+        height: 5.5rem
+    &__logo-title
+      display: block
+      font: normal 400 3rem "MyriadPro"
+      color: #353535
+    &__logo-subtitle
+      display: block
+      font: normal 300 1.8rem"MyriadPro"
+      color: #777777
+
+    &__button
+      background-color: transparent
+      height: 6.6rem
+      width: 5.7rem
+      display: flex
+      justify-content: center
+      align-items: center
+      img
+        max-width: 100%
+        max-height: 100%
+      &--search
+        margin-left: auto
+      &--phone
+        margin-left: 2.5rem
+        img
+          filter: invert(68%) sepia(21%) saturate(1013%) hue-rotate(84deg) brightness(85%) contrast(88%)
+      &--cart
+        flex-direction: column
+        margin-left: 2.5rem
+        span
+          margin-bottom: -0.5rem
+          font: normal 400 2.5rem "MyriadPro"
+          color: $color-accent-2
+
+    &-catalog
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 2.4rem 3rem
+      &__link
+        color: #000000
+        font: normal 400 3rem "MyriadPro"
+      &__text
+        color: #777777
+        font: normal 400 3rem "MyriadPro"

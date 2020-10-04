@@ -85,6 +85,26 @@
       & > .swiper-pagination-bullets 
         .swiper-pagination-bullet
           margin: 0 0.6rem
+    &-container
+      position: relative
+    &-button
+      &-prev, &-next
+        display: none
+        align-items: center
+        justify-content: center
+        position: absolute
+        top: 90%
+        color: $color-light
+        transition: color 0.3s ease
+        &:hover
+          color: rgba($color-light, 0.75)
+        &::after
+          font-size: 2.6rem
+      &-prev
+        left: 3rem
+      &-next
+        right: 3rem
+
 
   .discount
     width: 30rem
@@ -133,7 +153,11 @@
     &__link
       display: flex
       align-items: center
+      justify-content: center
       font: normal 400 1.8rem/4rem "MyriadPro"
       color: #232323
       &:hover
         text-decoration: underline
+      img
+        width: 22rem
+        height: auto
